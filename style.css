@@ -1,0 +1,147 @@
+* {
+    overflow-x: hidden;
+}
+
+/* NavBar */
+
+.navbar-collapse {
+    margin-right: 10%;
+}
+
+.navbar {
+    background-image: linear-gradient(#000000, transparent);
+    transition: background-color 0.1s linear;
+    transition: 0.4s;
+    padding: 0;
+}
+
+.navbar.solid {
+    background-color: #212731;
+    transition: background-color 0.7s ease 0s;
+    transition: 0.4s;
+    padding: 0;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    transition: 0.4s;
+}
+
+.logo.solid {
+    height: 30px;
+    width: 30px;
+    transition: 0.4s;
+}
+
+a {
+    color: white;
+    margin-top: 5px;
+    transition: 0.25s;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(174, 174, 174);
+}
+
+.bars{
+    width: 35px;
+    height: 35px;
+}
+
+/* BGintro */
+
+#BGintro {
+    background-color: rgb(232, 232, 232);
+    padding: 0;
+    margin: 0;
+    background-image: url("img/bgintro.png");
+}
+
+.carousel {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    margin-bottom: 15vh;
+}
+
+.triangle {
+  border-right: 98.8vw solid transparent;
+  border-bottom: 120px solid white;
+}
+
+.text {
+    margin-bottom: 7%;
+}
+
+h1, h5 {
+    margin-bottom: 30px;
+}
+
+/* AboutInforratica */
+
+#AboutInforratica {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.col-12 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#imgAboutInforratica {
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 31%;
+    object-fit: cover;
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: all 0.3s ease 0s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style:none
+}
+
+li {
+    margin-left: -10px;
+}
+
+hr {
+    border-top: 2px solid rgb(53, 53, 53);
+    width: 35%;
+    position: absolute;
+    left: 33%;
+}
+
+@media screen and (max-width: 767px) {
+    img {
+        width: 31%;
+    }
+    .about-title {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
