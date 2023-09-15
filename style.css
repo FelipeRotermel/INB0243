@@ -342,3 +342,13 @@ hr {
     font-size: 22px;
     cursor: pointer;
 }
+
+.col-lg-4 {
+    margin-top: 7%;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
