@@ -85,6 +85,16 @@
   border-bottom: 120px solid white;
 }
 
+#intro {
+    text-decoration: none;
+    color: white;
+    transition: 0.25s;
+}
+
+#intro:hover {
+    color: black;
+}
+
 #BGintro-text {
     margin-bottom: 7%;
 }
@@ -267,6 +277,8 @@ i {
 .mb-6 {
     max-width: 45%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid rgba(131, 131, 131, 0.479);
+    border-radius: 2px;
 }
 
 .col-md-3 {
@@ -295,4 +307,34 @@ hr {
         max-width: 90%;
         margin-top: 20px;
     }
+}
+
+/* Footer */
+
+#FooterContainer {
+    background-image: url("img/imgfooter.png");
+    padding: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+  
+#Footer-triangle{
+    border-right: 98.8vw solid transparent;
+    border-top: 120px solid white;
+}
+  
+.p-3 {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+  
+#Footer-a {
+    text-decoration: none;
+}
+  
+#Footer-i {
+    font-size: 22px;
+    cursor: pointer;
 }
