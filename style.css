@@ -5,7 +5,11 @@
 /* NavBar */
 
 .navbar-collapse {
-    margin-right: 10%;
+    margin-right: 5%;
+}
+
+.navbar-collapse.solid {
+    margin-right: 2%;
 }
 
 .navbar {
