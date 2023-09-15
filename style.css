@@ -34,16 +34,18 @@
     transition: 0.4s;
 }
 
-a {
+#NavBar-a {
     color: white;
     margin-top: 5px;
     transition: 0.25s;
+    margin-left: 5px;
+    margin-right: 5px;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
 }
 
-a:hover {
+#NavBar-a:hover {
     color: rgb(174, 174, 174);
 }
 
@@ -54,14 +56,14 @@ a:hover {
 
 /* BGintro */
 
-#BGintro {
+#BGintroContainer {
     background-color: rgb(232, 232, 232);
     padding: 0;
     margin: 0;
     background-image: url("img/bgintro.png");
 }
 
-.carousel {
+#BGintroCarousel {
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -83,27 +85,27 @@ a:hover {
   border-bottom: 120px solid white;
 }
 
-.text {
+#BGintro-text {
     margin-bottom: 7%;
 }
 
-h1, h5 {
+#BGintro-h {
     margin-bottom: 30px;
 }
 
 /* AboutInforratica */
 
-#AboutInforratica {
+#AboutInforraticaContainer {
     position: relative;
     padding-bottom: 50px;
 }
 
-.col-12 {
+#AboutInforratica-col-12 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-#imgAboutInforratica {
+#AboutInforratica-img {
     min-height: 450px;
     background-attachment: fixed;
     background-position: center;
@@ -113,20 +115,20 @@ h1, h5 {
     object-fit: cover;
     margin-left: 1.5px;
     margin-right: 1.5px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     transition: all 0.3s ease 0s;
 }
 
-img:hover {
-    transform: scale(1.05);
+#AboutInforratica-img:hover {
+    transform: scale(0.96);
 }
 
 ul {
     list-style:none
 }
 
-li {
-    margin-left: -10px;
+.bi-check-circle-fill {
+    font-size: 1rem;
 }
 
 hr {
@@ -137,11 +139,160 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
-    img {
+    #AboutInforratica-img {
         width: 31%;
     }
-    .about-title {
+    #AboutInforratica-h {
         text-align: center;
         margin-top: 50px;
+    }
+}
+
+/* CarouselLogo */
+
+#CarouselLogoCarousel{
+    background-color: rgb(216, 216, 216);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.card img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.card {
+    margin: 0 0.5em;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+.carousel-inner {
+    padding: 1em;
+}
+
+i {
+    font-size: 2rem;
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .card img {
+        width: 60px;
+    }
+}
+
+/* AboutBrands */
+
+#AboutBrandsContainer {
+    position: relative;
+    padding-top: 50px;
+}
+
+.col-md-6 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#divRight {
+    background-image: url('img/PaintRight.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#AboutBrands-img {
+    width: 90%;
+    height: 90%;
+}
+
+/* AboutPC */
+
+#AboutPCContainer{
+    position: relative;
+    background-color: #dadada;
+    margin: 0;
+    padding: 0;
+}
+
+.col-md-6 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#divLeft {
+    background-image: url("img/PaintLeft.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#AboutPC-img {
+    width: 100%;
+    height: 100%;
+}
+
+.triangleLeft {
+    border-Left: 98.8vw solid transparent;
+    border-top: 120px solid white;
+}
+
+.triangleRight {
+    border-right: 98.8vw solid transparent;
+    border-bottom: 120px solid white;
+}
+
+/* FAQ */
+
+#FAQContainer {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+#FAQ-col-12 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mb-6 {
+    max-width: 45%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.col-md-3 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}	
+
+hr {
+    border-top: 2px solid rgb(53, 53, 53);
+    width: 35%;
+    position: absolute;
+    left: 33%;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+#FAQ-i {
+    font-size: 65px;
+}
+
+@media screen and (max-width: 767px) {
+    .mb-6 {
+        max-width: 90%;
+        margin-top: 20px;
     }
 }

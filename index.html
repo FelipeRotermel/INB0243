@@ -5,16 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inforratica</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        
     </head>
     <body>
 
         <!-- NavBar -->
 
         <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#" aria-current="page">
+            <div class="container-fluid" id="NavBarContainer">
+                <a class="navbar-brand text-light" href="#" aria-current="page" id="NavBar-a">
                     <img src="img/logo.png" width="75px" class="logo">Inforratica
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,16 +25,16 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mb-3 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-light">Home</a>
+                            <a class="nav-link text-light" id="NavBar-a">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light">Sobre a Inforratica</a>
+                            <a class="nav-link text-light" id="NavBar-a">Sobre a Inforratica</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light">Marcas</a>
+                            <a class="nav-link text-light" id="NavBar-a">Marcas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light">Perguntas</a>
+                            <a class="nav-link text-light" id="NavBar-a">Perguntas</a>
                         </li>
                     </ul>
                 </div>
@@ -41,13 +43,13 @@
 
         <!-- BGintro -->
 
-        <div class="container-fluid" id="BGintro">
-            <div class="carousel slide w-100">
+        <div class="container-fluid" id="BGintroContainer">
+            <div class="carousel slide w-100" id="BGintroCarousel">
                 <div class="carousel-inner"></div>
                 <div class="carousel-caption d-flex align-items-center justify-content-center text-center">
-                    <div class="text">
-                        <h1><strong>Manutenção e reparo de computadores e notebooks</strong></h1>
-                        <h5>Assistência técnica especializada em notebooks e computadores</h5>
+                    <div class="text" id="BGintro-text">
+                        <h1 id="BGintro-h"><strong>Manutenção e reparo de computadores e notebooks</strong></h1>
+                        <h5 id="BGintro-h">Assistência técnica especializada em notebooks e computadores</h5>
                         <button type="button" class="btn btn-outline-light fs-4" v-scroll-to="'#aboutInforratica'">
                             Introdução
                         </button>
@@ -59,20 +61,20 @@
 
         <!-- AboutInforratica -->
 
-        <div class="container-fluid" id="aboutInforratica">
+        <div class="container-fluid" id="AboutInforraticaContainer">
             <div class="container container_item">
                 <div class="row">
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center" id="AboutInforratica-col-12">
                         <h3 class="main-title display-6 fw-bold">Sobre a Inforratica:</h3>
                         <hr class="opacity-100">
                     </div>
                     <div class="col-md-7">
-                        <img src="img/InfoPcLeft.jpg" alt="" id="imgAboutInforratica">
-                        <img src="img/InfoPcCenter.jpg" alt="" id="imgAboutInforratica">
-                        <img src="img/InfoPcRight.jpg" alt="" id="imgAboutInforratica">
+                        <img src="img/InfoPcLeft.jpg" alt="" id="AboutInforratica-img">
+                        <img src="img/InfoPcCenter.jpg" alt="" id="AboutInforratica-img">
+                        <img src="img/InfoPcRight.jpg" alt="" id="AboutInforratica-img">
                     </div>
                     <div class="col-md-5">
-                        <h3 class="about-title">A mais confiável</h3>
+                        <h3 class="about-title" id="AboutInforratica-h">A mais confiável</h3>
                         <p class="fs-5 text">
                             Inforratica é uma loja especializada em reparo de computadores e notebooks. Começamos nossa operação em 2023, com o objetivo de fornecer os melhores produtos e serviços de informática para nossos clientes.
                             Oferecemos serviços de manutenção e suporte técnico para garantir que nossos clientes possam desfrutar de uma experiência tranquila e sem problemas com seus equipamentos.
@@ -88,8 +90,165 @@
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- CarouselLogo -->
+
+        <div id="CarouselLogoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h1 class="fs-1 text-center">Trabalhamos com:</h1>
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <img src="https://logodownload.org/wp-content/uploads/2014/09/acer-logo-1.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="https://logosmarcas.net/wp-content/uploads/2020/04/Sony-Logo.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/2560px-LG_logo_%282015%29.svg.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="https://logodownload.org/wp-content/uploads/2014/09/asus-logo-0.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Toshiba_logo.svg/2560px-Toshiba_logo.svg.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/09/Figura-Logo-HP-PNG.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="https://logodownload.org/wp-content/uploads/2014/09/lenovo-logo-0.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="https://static.vecteezy.com/system/resources/previews/019/909/451/original/dell-transparent-dell-free-free-png.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="https://logodownload.org/wp-content/uploads/2013/12/apple-logo-0.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselLogoCarousel" data-bs-slide="prev">
+                <i class="bi bi-arrow-left-circle"></i>
+            </button>
+            <button class="carousel-control-next btn-outline-secondary" type="button" data-bs-target="#CarouselLogoCarousel" data-bs-slide="next">
+                <i class="bi bi-arrow-right-circle"></i>
+            </button>
+        </div>
+
+        <!-- AboutBrands -->
+
+        <div class="container-fluid" id="AboutBrandsContainer">
+            <div class="container container_item">
+                <div class="row">
+                    <div class="col-md-6 order-md-2" id="divRight">
+                        <img class="img-fluid" src="img/notebooks.png" id="AboutBrands-img">
+                    </div>
+                    <div class="col-md-6 row order-md-1">
+                        <div>
+                            <h3 class="fs-1">Nós temos a solução</h3>
+                            <p class="fs-5 text">
+                                Consertamos computadores e notebooks de diversas marcas como Apple, Dell, HP, Sony, Acer, Lenovo, Asus, Toshiba, Samsung entre outras!. Além disso, nossos serviços também englobam a formatação e reinstalação de sistemas operacionais, remoção de vírus, troca de peças, limpeza interna, entre outros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AboutPC -->
+
+        <div class="container-fluid" id="AboutPCContainer">
+            <div class="triangleLeft"></div>
+            <div class="container container_item">
+                <div class="row">
+                    <div class="col-md-6" id="divLeft">
+                        <img class="img-fluid" src="img/Pc.png" id="AboutPC-img">
+                    </div>
+                    <div class="col-md-6 row">
+                        <div>
+                            <h3 class="fs-1">Computadores Gamers</h3>
+                            <p class="fs-5 text">
+                                Também somos expecialistas em computadores gamers de alta performace. Sua máquina irá voltar novinha em folha e pronta para rodar os jogos mais pesados do mercado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="triangleRight"></div>
+        </div>
+
+        <!-- FAQ -->
+
+        <div class="container-fluid" id="FAQContainer">
+            <div class="col-12 text-center" id="FAQ-col-12">
+                <h3 class="main-title display-6 fw-bold">Perguntas:</h3>
+                <hr class="opacity-100">
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="card mb-6">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <i class="bi bi-truck" id="FAQ-i"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Como faço para enviar minha máquina?</h5>
+                                <p class="card-text">Você pode trazer pessoalmente até nossa loja. Além disso, também oferecemos um serviço de coleta, onde podemos agendar a retirada do seu dispositivo em sua residência ou escritório.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-6">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <i class="bi bi-journal-text" id="FAQ-i"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Quanto tempo leva para o orçamento?</h5>
+                                <p class="card-text">Normalmente, entre 24 a 48 horas úteis para realizar uma análise completa do problema e fornecer um orçamento preciso. No entanto, em casos mais complexos, esse prazo pode se estender um pouco mais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="card mb-6">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <i class="bi bi-tools" id="FAQ-i"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Quais tipos de problemas vocês reparam?</h5>
+                                <p class="card-text">Falhas no S.0, reparo de hardware, substituição de componentes, remoção de vírus e malware, entre outros. Se você estiver enfrentando algum problema, entre em contato para que possamos ajudá-lo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-6">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <i class="bi bi-calendar-check" id="FAQ-i"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Vocês oferecem garantia?</h5>
+                                <p class="card-text">Sim, garantimos a qualidade dos nossos serviços de reparo. Todos os reparos feitos em computadores e notebooks incluem uma garantia de 3 meses, que cobre qualquer problema relacionado ao reparo realizado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
