@@ -1,15 +1,11 @@
-* {
-    overflow-x: hidden;
-}
-
 /* NavBar */
 
 .navbar-collapse {
-    margin-right: 5%;
+    margin-right: 20vh;
 }
 
 .navbar-collapse.solid {
-    margin-right: 2%;
+    margin-right: 24vh;
 }
 
 .navbar {
@@ -169,28 +165,30 @@ hr {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-.cards-wrapper {
+#LogoCardsWrapper {
     display: flex;
     justify-content: center;
 }
 
-.card {
+#LogoCard {
     justify-content: center;
     align-items: center;
     padding-right: 2%;
     padding-left: 2%;
 }
-.card img {
+
+#LogoCard img {
     max-width: 100px;
     max-height: 100px;
 }
 
-.card {
+#LogoCard  {
     margin: 0 0.5em;
     border: none;
     border-radius: 0;
     background-color: transparent;
 }
+
 .carousel-inner {
     padding: 1em;
 }
@@ -264,6 +262,82 @@ i {
 .triangleRight {
     border-right: 98.8vw solid transparent;
     border-bottom: 120px solid white;
+}
+
+/* Products */
+
+#ProductsContainer {
+    position: relative;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+#CarouselProductCarousel {
+    justify-content: center;
+    align-items: center;
+}
+
+#ProductsCardsWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#ProductsCard {
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+#ProductsCard img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#ProductsCard  {
+    margin: 0 0.5em;
+    height: 70vh;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 6px;
+}
+
+#buttonLeft {
+    padding-left: 100px;
+}
+
+#buttonRight {
+    padding-right: 100px;
+}
+
+#CarouselProductCarousel2 {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #CarouselProductCarousel {
+        display: none;
+    }
+    #CarouselProductCarousel2 {
+        display: contents;
+    }
+    #buttonLeft {
+        padding-left: 0;
+    }
+    
+    #buttonRight {
+        padding-right: 0;
+    }
+    #ProductsCard  {
+        height: 55vh;
+    }
+}
+
+.text-success {
+    font-weight: bold;
 }
 
 /* FAQ */

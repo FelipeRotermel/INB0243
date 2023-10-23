@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inforratica</title>
+        <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
 
+        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -99,39 +101,39 @@
             <div class="carousel-inner">
                 <h1 class="fs-1 text-center">Trabalhamos com:</h1>
                 <div class="carousel-item active">
-                    <div class="cards-wrapper">
-                        <div class="card">
+                    <div class="cards-wrapper" id="LogoCardsWrapper">
+                        <div class="card" id="LogoCard">
                             <img src="https://logodownload.org/wp-content/uploads/2014/09/acer-logo-1.png" class="card-img-top" alt="...">
                         </div>
-                        <div class="card">
+                        <div class="card" id="LogoCard">
                             <img src="https://logosmarcas.net/wp-content/uploads/2020/04/Sony-Logo.png" class="card-img-top" alt="...">
                         </div>
-                        <div class="card">
+                        <div class="card" id="LogoCard">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" class="card-img-top" alt="...">
                         </div>
-                        <div class="card">
+                        <div class="card" id="LogoCard">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/2560px-LG_logo_%282015%29.svg.png" class="card-img-top" alt="...">
                         </div>
-                        <div class="card">
+                        <div class="card" id="LogoCard">
                             <img src="https://logodownload.org/wp-content/uploads/2014/09/asus-logo-0.png" class="card-img-top" alt="...">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="cards-wrapper">
-                        <div class="card">
+                    <div class="cards-wrapper" id="LogoCardsWrapper">
+                        <div class="card" id="LogoCard">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Toshiba_logo.svg/2560px-Toshiba_logo.svg.png" class="card-img-top" alt="...">
                         </div>
-                        <div class="card">
+                        <div class="card" id="LogoCard">
                             <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/09/Figura-Logo-HP-PNG.png" class="card-img-top" alt="...">
                         </div>
-                        <div class="card">
+                        <div class="card" id="LogoCard">
                             <img src="https://logodownload.org/wp-content/uploads/2014/09/lenovo-logo-0.png" class="card-img-top" alt="...">
                         </div>
-                        <div class="card">
+                        <div class="card" id="LogoCard">
                             <img src="https://static.vecteezy.com/system/resources/previews/019/909/451/original/dell-transparent-dell-free-free-png.png" class="card-img-top" alt="...">
                         </div>
-                        <div class="card">
+                        <div class="card" id="LogoCard">
                             <img src="https://logodownload.org/wp-content/uploads/2013/12/apple-logo-0.png" class="card-img-top" alt="...">
                         </div>
                     </div>
@@ -178,13 +180,154 @@
                         <div>
                             <h3 class="fs-1">Computadores Gamers</h3>
                             <p class="fs-5 text">
-                                Também somos expecialistas em computadores gamers de alta performace. Sua máquina irá voltar novinha em folha e pronta para rodar os jogos mais pesados do mercado.
+                                Também somos expecialistas em computadores gamers de alta performace. Sua máquina irá voltar novinha em folha e pronta para suportar os jogos mais pesados do mercado.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="triangleRight"></div>
+        </div>
+
+        <!-- Products -->
+
+        <div class="container-fluid" id="ProductsContainer">
+            <div class="container container_item">
+                <div class="row">
+                    <div class="col-md-3 row text-start">
+                        <h3 class="fs-1">Computadores Montados</h3>
+                        <p class="fs-5 text">
+                            Montamos computadores de acordo com a sua necessidade. Seja para jogos, trabalho ou estudos, nós temos a máquina perfeita para você.
+                        </p>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="CarouselProductCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="cards-wrapper" id="ProductsCardsWrapper">
+                                        <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCG1.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR GAMER, INTEL I3-13100F, RADEON RX 7600 8GB, 16GB DDR4, SSD 480GB</p>
+                                              <p class="text-success fs-5">R$ 3.999,83</p>
+                                            </div>
+                                          </div>
+                                          <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCG2.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR MANCER GAMER, INTEL I5-13400F, RADEON RX 7600 8GB, 16GB DDR4, SSD 480GB</p>
+                                              <p class="text-success fs-5">R$ 4.829,81</p>
+                                            </div>
+                                          </div>
+                                          <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCG3.png" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR GAMER, INTEL I5-11400F, RADEON RX 5500 XT 8GB, 16GB DDR4, SSD M.2 480GB</p>
+                                              <p class="text-success fs-5">R$ 3.139,78</p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="cards-wrapper" id="ProductsCardsWrapper">
+                                        <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCH1.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR HOME HM332, INTEL CORE I5-8500, UHD INTEL 630, 16GB DDR4, SSD 480GB</p>
+                                              <p class="text-success fs-5">R$ 1.649,97</p>
+                                            </div>
+                                          </div>
+                                          <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCH2.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR HOME HM377, INTEL CORE I3-10100F, GEFORCE GT 1030 2GB, 8GB DDR4, SSD 240GB</p>
+                                              <p class="text-success fs-5">R$ 1.979,97</p>
+                                            </div>
+                                          </div>
+                                          <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCH3.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR HOME, AMD RYZEN 3 4100, RADEON R5 230 1GB, 8GB DDR4, HD 1TB</p>
+                                              <p class="text-success fs-5">R$ 1.599,97</p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" id="buttonRight" data-bs-target="#CarouselProductCarousel" data-bs-slide="prev">
+                                <i class="bi bi-arrow-left-circle"></i>
+                            </button>
+                            <button class="carousel-control-next btn-outline-secondary" type="button" id="buttonLeft" data-bs-target="#CarouselProductCarousel" data-bs-slide="next">
+                                <i class="bi bi-arrow-right-circle"></i>
+                            </button>
+                        </div>
+                        <div id="CarouselProductCarousel2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carousel-pc">
+                                <div class="carousel-item active">
+                                    <div class="cards-wrapper" id="ProductsCardsWrapper">
+                                        <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCG1.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR GAMER, INTEL I3-13100F, RADEON RX 7600 8GB, 16GB DDR4, SSD 480GB</p>
+                                              <p class="text-success fs-5">R$ 3.999,83</p>
+                                            </div>
+                                          </div>
+                                          <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCG2.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR MANCER GAMER, INTEL I5-13400F, RADEON RX 7600 8GB, 16GB DDR4, SSD 480GB</p>
+                                              <p class="text-success fs-5">R$ 4.829,81</p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="cards-wrapper" id="ProductsCardsWrapper">
+                                        <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCH1.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR GAMER, INTEL I5-11400F, RADEON RX 5500 XT 8GB, 16GB DDR4, SSD M.2 480GB</p>
+                                              <p class="text-success fs-5">R$ 3.139,78</p>
+                                            </div>
+                                          </div>
+                                          <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCH2.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR HOME HM332, INTEL CORE I5-8500, UHD INTEL 630, 16GB DDR4, SSD 480GB</p>
+                                              <p class="text-success fs-5">R$ 1.649,97</p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="cards-wrapper" id="ProductsCardsWrapper">
+                                        <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCG3.png" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR PICHAU HOME HM377, INTEL CORE I3-10100F, GEFORCE GT 1030 2GB, 8GB DDR4, SSD 240GB</p>
+                                              <p class="text-success fs-5">R$ 1.979,97</p>
+                                            </div>
+                                          </div>
+                                          <div class="card" style="width: 18rem;" id="ProductsCard">
+                                            <img src="img/PCH3.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                              <p class="card-text">COMPUTADOR HOME, AMD RYZEN 3 4100, RADEON R5 230 1GB, 8GB DDR4, HD 1TB</p>
+                                              <p class="text-success fs-5">R$ 1.599,97</p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" id="buttonRight" data-bs-target="#CarouselProductCarousel2" data-bs-slide="prev">
+                                <i class="bi bi-arrow-left-circle"></i>
+                            </button>
+                            <button class="carousel-control-next btn-outline-secondary" type="button" id="buttonLeft" data-bs-target="#CarouselProductCarousel2" data-bs-slide="next">
+                                <i class="bi bi-arrow-right-circle"></i>
+                            </button>
+                        </div>         
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- FAQ -->
