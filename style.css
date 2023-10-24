@@ -1,3 +1,10 @@
+/* HTML */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7%;
+  }
+
 /* NavBar */
 
 .navbar-collapse {
@@ -61,6 +68,10 @@
     padding: 0;
     margin: 0;
     background-image: url("img/bgintro.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #BGintroCarousel {
@@ -260,6 +271,11 @@ i {
 }
 
 .triangleRight {
+    border-Left: 98.8vw solid transparent;
+    border-top: 120px solid #dadada;
+}
+
+.triangleLeftBottom {
     border-right: 98.8vw solid transparent;
     border-bottom: 120px solid white;
 }
@@ -268,7 +284,11 @@ i {
 
 #ProductsContainer {
     position: relative;
-    background-color: #ffffff;
+    background-image: url("img/bgintro.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
@@ -283,13 +303,6 @@ i {
     justify-content: center;
 }
 
-#ProductsCard {
-    justify-content: center;
-    align-items: center;
-    padding-right: 2%;
-    padding-left: 2%;
-}
-
 #ProductsCard img {
     max-width: 100%;
     max-height: 100%;
@@ -297,20 +310,24 @@ i {
 
 #ProductsCard  {
     margin: 0 0.5em;
-    height: 70vh;
+    height: 65vh;
     border: none;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 2%;
     border-radius: 0;
-    background-color: transparent;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 6px;
 }
 
 #buttonLeft {
-    padding-left: 100px;
+    padding-left: 150px;
 }
 
 #buttonRight {
-    padding-right: 100px;
+    padding-right: 150px;
 }
 
 #CarouselProductCarousel2 {
@@ -332,7 +349,8 @@ i {
         padding-right: 0;
     }
     #ProductsCard  {
-        height: 55vh;
+        height: 100%;
+        min-height: 353px;
     }
 }
 
@@ -392,6 +410,7 @@ hr {
 #FooterContainer {
     background-image: url("img/imgfooter.png");
     padding: 0;
+    margin: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
